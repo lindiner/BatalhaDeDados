@@ -1,0 +1,193 @@
+ {% extends 'bases/init_base.html' %} {% load static %} {% block title %} Landing Page {% endblock %} {% block content %}
+
+<body class="landing-page">
+    <!-- Navbar -->
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5" href="../index.html">
+                <!-- <img src={% static "assets/img/brand/white.png" %}> -->
+                <h3 class="font-weight-bold title">NOMESITE</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="#">
+                                <h3 class="font-weight-bold title">NOMESITE</h3>
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+              </button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                    <li class="nav-item d-none d-lg-block">
+                        <a href={% url 'authapp:login' %} class="btn btn-neutral btn-icon">
+                            <span class="nav-link-inner--text">Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper">
+        <div class="section section-hero section-shaped">
+            <div class="shape shape-style-3 shape-default">
+                <span class="span-150"></span>
+                <span class="span-50"></span>
+                <span class="span-50"></span>
+                <span class="span-75"></span>
+                <span class="span-100"></span>
+                <span class="span-75"></span>
+                <span class="span-50"></span>
+                <span class="span-100"></span>
+                <span class="span-50"></span>
+                <span class="span-100"></span>
+            </div>
+            <div class="page-header">
+                <div class="container shape-container d-flex align-items-center py-lg">
+                    <div class="col px-0">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-6 text-center">
+                                <h1 class="text-white display-1">NOMESITE</h1>
+                                <h2 class="display-4 font-weight-normal text-white">Seu aprendizado aprimorado é nosso objetivo realizado!</h2>
+                                <div class="btn-wrapper mt-4">
+                                    <a href={% url 'authapp:login' %} class="btn btn-warning btn-icon mt-3 mb-sm-0">
+                                        <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+                                        <span class="btn-inner--text">Conheça Agora!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator separator-bottom separator-skew zindex-100">
+                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+            </div>
+        </div>
+        <div class="section features-6">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="info info-horizontal info-hover-primary">
+                            <div class="description pl-4">
+                                <h5 class="title">Para Professores</h5>
+                                <p>Nosso time utiliza as melhores e mais avançadas tecnologias para gerar e personalizar a sua metodologia de ensino, possibilidade maior aprendizado e otimização de tempo para os professores, alem da aplicação de metologias
+                                    mais eficazes e menos tempo para prepará-las.</p>
+
+                            </div>
+                        </div>
+                        <div class="info info-horizontal info-hover-primary mt-5">
+                            <div class="description pl-4">
+                                <h5 class="title">Para Alunos</h5>
+                                <p>Identificação de dificuldades durante o aprendizado enquanto conteúdos personalizados e eficazes são disponibilidos para diminuir o défice no compreendimento e aplicação dos alunos, possibilitando novas formas de otimizar
+                                    o tempo dos alunos com conteúdos qualitativos.</p>
+                            </div>
+                        </div>
+                        <div class="info info-horizontal info-hover-primary mt-5">
+                            <div class="description pl-4">
+                                <h5 class="title">Para Escolas</h5>
+                                <p>As escolas são beneficiadas com melhores estatísticas objetivas em curto prazo de tempo, mostrando o desempenho real e completo dos estudantes matriculados.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-10 mx-md-auto">
+                        <img class="ml-lg-5" src={% static "assets/img/myimgs/muielivro.png"%} width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section features-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto text-center">
+                        <!-- <span class="badge badge-primary badge-pill mb-3">Insight</span> -->
+                        <h3 class="display-3">O que a análise profunda dos dados pode oferecer?</h3>
+                        <p class="lead">Benefícios produzidos com a análise dos dados educacionais.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle">
+                                <i class="ni ni-settings-gear-65"></i>
+                            </div>
+                            <h6 class="info-title text-uppercase text-primary">Melhor Funcionamento do Sistema</h6>
+                            <p class="description opacity-8">O sistema tem como fator principal, otimizar e qualificar os conhecimentos com base em sua absorção em cada tipo de aluno, tornando o sistema educacional mais eficaz.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle">
+                                <i class="ni ni-atom"></i>
+                            </div>
+                            <h6 class="info-title text-uppercase text-success">Personalização do Conteúdo</h6>
+                            <p class="description opacity-8">Entendemos que cada aluno tem sua forma de aprender e suas dificuldades, isso é transparecido por meio de suas ações e suas ações nos movitam as nossas motivações em melhorar o sistema.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle">
+                                <i class="ni ni-world"></i>
+                            </div>
+                            <h6 class="info-title text-uppercase text-warning">Impacto Em Larga Escala</h6>
+                            <p class="description opacity-8">Cada escola que participa do nosso projeto se torna um gerador de conteúdo e consumidor de conteúdo que se auto alimenta, tornando-se em um sistema colaborativo, eficaz e único.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br />
+        <footer class="footer">
+            <div class="container">
+                <div class="row row-grid align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <h3 class="text-success font-weight-light mb-2">Venha se juntar ao nosso grupo!</h3>
+                        <h4 class="mb-0 font-weight-light">Em prol de uma educação menos desigual e mais eficiente.</h4>
+                    </div>
+                    <div class="col-lg-6 text-lg-center btn-wrapper">
+                        <img class="ml-lg-5" src={% static "assets/img/myimgs/homiquadro.png"%} width="100%">
+                    </div>
+                </div>
+                <hr>
+                <div class="row align-items-center justify-content-md-between">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            &copy; 2021 <a href="" target="_blank">4dimensions</a>.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav nav-footer justify-content-end">
+                            <li class="nav-item">
+                                <a href="" class="nav-link" target="_blank">4dimensions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link" target="_blank">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link" target="_blank">Blog</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    {% endblock %}
