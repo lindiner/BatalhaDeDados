@@ -1,0 +1,30 @@
+-model: Group
+fields:
+    name: "professor" -
+    model: Group
+fields:
+    name: "aluno" -
+    model: Group
+fields:
+    name: "escola"
+
+
+[{
+        "model": "Group",
+        "fields": {
+            "name": "professor"
+        }
+    },
+    {
+        "model": "Group",
+        "fields": {
+            "name": "aluno"
+        }
+    },
+    {
+        "model": "Group",
+        "fields": {
+            "name": "escola"
+        }
+    }
+]

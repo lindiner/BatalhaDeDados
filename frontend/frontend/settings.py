@@ -126,3 +126,4 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+FIXTURE_DIRS = [os.path.join(BASE_DIR,'fixtures')]

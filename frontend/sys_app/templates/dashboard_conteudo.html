@@ -1,0 +1,61 @@
+ {% extends 'bases/dashboard_base.html' %} {% block title %} Conteudo {% endblock %} {% load card_conteudo %}{% load static %} {% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-8 align-self-center">
+                <h3 class="page-title mb-0 p-0">Conteudos</h3>
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href={% url 'sys_app:dashboard' %}>Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Conteudo</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-6 col-4 align-self-center">
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Sales chart -->
+        <!-- ============================================================== -->
+        <h1> Seus Questionários </h1>
+        <div class="row">
+            {% for x in cards %} {% card_conteudo x %} {% endfor %}
+
+
+        </div>
+
+        <h1> Recomendações </h1>
+        <div class="row">
+            {% for x in cardsRec %} {% card_conteudo x %} {% endfor %}
+
+
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer"> © 2021 Material Pro Admin by <a href={% url 'sys_app:homepage' %}>4dimension </a>
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+</div>
+{% endblock %}

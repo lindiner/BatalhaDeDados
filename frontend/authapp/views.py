@@ -25,4 +25,4 @@ def register(request):
 
 def logout(request):
     authLogout(request)
-    pass
+    return HttpResponseRedirect(reverse('authapp:login'))
