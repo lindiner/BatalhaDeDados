@@ -3,11 +3,9 @@
 
 ## Demo 60 segundos
 
-:tv: [Demo 60 segundos](https://youtu.be/qccktAWBroM)
+:tv: [Demo 60 segundos](https://youtu.be/Xbb_ks5-IxU)
 
-* o vídeo do demo está com 59 segundos, mas a ferramenta que usamos não é gratuita e adiciona um ending com a sua marca ao final de qualquer vídeo renderizado.
-
-[![Demo 60 segundos](http://img.youtube.com/vi/qccktAWBroM/0.jpg)](https://youtu.be/qccktAWBroM "Demo 60 segundos")
+[![Demo 60 segundos](http://img.youtube.com/vi/Xbb_ks5-IxU/0.jpg)](https://youtu.be/Xbb_ks5-IxU "Demo 60 segundos")
 
 ## Demo: interface de usuário e código front-end
 
