@@ -12,6 +12,11 @@
 
 [Demo: análise dos descritores do SPAEDE](https://youtu.be/NugsZIxKQ20)
 
+[![Demo: análise dos descritores do SPAEDE](http://img.youtube.com/vi/NugsZIxKQ20/0.jpg)](https://youtu.be/NugsZIxKQ20 "Demo: análise dos descritores do SPAEDE")
+
+
 ## Demo: comparando desempenho avaliado nos descritores do SPAEDE
 
 [Demo: análise dos descritores do SPAEDE](https://youtu.be/fW2e8S7Xx8E)
+
+[![Demo: análise dos descritores do SPAEDE](http://img.youtube.com/vi/fW2e8S7Xx8E/0.jpg)](https://youtu.be/fW2e8S7Xx8E "Demo: análise dos descritores do SPAEDE")
