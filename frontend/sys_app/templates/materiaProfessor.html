@@ -1,0 +1,198 @@
+{% extends 'bases/dashboard_base.html' %} {% block title %} Conteudo {% endblock %} {% load card_conteudo %}{% load static %} {% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-8 align-self-center">
+                <h3 class="page-title mb-0 p-0">Cadastrar materia</h3>
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Cadastrar materia</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-6 col-4 align-self-center">
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Sales chart -->
+        <!-- ============================================================== -->
+        <h2>Cadastrar Disciplina</h2>
+
+        <div class="tab-pane" id="settings" role="tabpanel">
+            <div class="card-body">
+                <form class="form-horizontal form-material mx-2">
+                    <div class="form-group">
+                        <label class="col-md-12">Nome</label>
+                        <div class="col-md-12">
+                            <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line ps-0">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="example-email" class="col-md-12">Area de Conhecimento</label>
+                        <div class="col-sm-12 border-bottom">
+                            <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                        <option selected>Selecione a area da disciplina</option>
+                                        <option>Ciências Humanas e suas Tecnologias</option>
+                                        <option>Matemática e suas Tecnologias</option>
+                                        <option>Ciências da Natureza e suas Tecnologias</option>
+                                        <option>Linguagens, suas Tecnologias</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="col-sm-12 border-bottom">
+                                <label class="col-xs-4">Ano/Serie</label>
+                                <div class="col-xs-4 border-bottom">
+                                    <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                        <option >Selecione o ano da turma</option>
+                                        <option>1 Ano </option>
+                                        <option>2 Ano</option>
+                                        <option>3 Ano</option>
+                                        <option>4 Ano</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label class="col-xs-4">Turma</label>
+                            <div class="col-xs-4 border-bottom">
+                                <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                    <option >Selecione a turma</option>
+                                    <option>A </option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="col-sm-12 border-bottom">
+                                <label class="col-xs-4">CH Semenal</label>
+                                <input type="text" class="form-control form-control-line ps-0" placeholder=" 00">
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label class="col-xs-4">CH Total</label>
+                            <input type="text" class="form-control form-control-line ps-0" placeholder=" 00">
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Cadastrar Conteudo</h3>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-outline-success" type="button" data-toggle="tooltip" data-placement="top" title="Add"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <label class="col-xs-2">Habildade</label>
+                            <div class="col-xs-2 border-bottom">
+                                <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                    <option selected>H1</option>
+                                    <option>H2</option>
+                                    <option>H3</option>
+                                    <option>H4</option>
+                                    <option>H5</option>
+                                    <option>H6</option>
+                                    <option>H7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label class="col-xs-4">Conteudo</label>
+                            <div class="col-xs-4">
+                                <input type="text" placeholder=" geometria analitica" class="form-control form-control-line ps-0">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <label class="col-xs-2">Habildade</label>
+                            <div class="col-xs-2 border-bottom">
+                                <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                    <option selected>H1</option>
+                                    <option>H2</option>
+                                    <option>H3</option>
+                                    <option>H4</option>
+                                    <option>H5</option>
+                                    <option>H6</option>
+                                    <option>H7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label class="col-xs-4">Conteudo</label>
+                            <div class="col-xs-4">
+                                <input type="text" placeholder="Conjunto" class="form-control form-control-line ps-0">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <label class="col-xs-2">Habildade</label>
+                            <div class="col-xs-2 border-bottom">
+                                <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                    <option selected>H1</option>
+                                    <option>H2</option>
+                                    <option>H3</option>
+                                    <option>H4</option>
+                                    <option>H5</option>
+                                    <option>H6</option>
+                                    <option>H7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label class="col-xs-4">Conteudo</label>
+                            <div class="col-xs-4">
+                                <input type="text" placeholder="Numeros naturais" class="form-control form-control-line ps-0">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer"> © 2021 <a href={% url 'sys_app:homepage' %}>Feito com s2 </a>
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+</div>
+{% endblock %}

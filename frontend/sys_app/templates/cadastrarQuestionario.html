@@ -1,0 +1,198 @@
+{% extends 'bases/dashboard_base.html' %} {% block title %} Conteudo {% endblock %} {% load card_conteudo %}{% load static %} {% block content %}
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-8 align-self-center">
+                <h3 class="page-title mb-0 p-0">Conteudos</h3>
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Conteudo</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-6 col-4 align-self-center">
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Sales chart -->
+        <!-- ============================================================== -->
+        <div class="tab-pane" id="settings" role="tabpanel">
+            <div class="card-body">
+                <h2>Cadastro de Atividade</h2>
+                <form class="form-horizontal form-material mx-2">
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="col-sm-12 border-bottom">
+                                <label class="col-xs-4">Materia</label>
+                                <div class="col-xs-4 border-bottom">
+                                    <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                        <option >Selecione a Materia</option>
+                                        <option>Portugues I</option>
+                                        <option>Portugues II</option>
+                                        <option>Matematica </option>
+                                        <option>Matematica Financeira</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label class="col-xs-4">Conteudo</label>
+                            <div class="col-xs-4 border-bottom">
+                                <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                    <option >Selecione o conteudo Principal</option>
+                                    <option>Conjunto</option>
+                                    <option>Numeros Naturais</option>
+                                    <option>Algebra linear</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <h4>Cadastrar Questões</h4>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-outline-success btn-lg" type="button" data-toggle="tooltip" data-placement="top" title="Unica escolha"><i class="fa fa-dot-circle"></i></button>
+                        <button class="btn btn-outline-success btn-lg" type="button" data-toggle="tooltip" data-placement="top" title="Mutipla escolha"><i class="fa fa-check-square"></i></button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Questao </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button">
+                    </div>
+
+                    <br>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <label class="col-xs-2">Habildade</label>
+                            <div class="col-xs-2 border-bottom">
+                                <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                    <option selected>H1</option>
+                                    <option>H2</option>
+                                    <option>H3</option>
+                                    <option>H4</option>
+                                    <option>H5</option>
+                                    <option>H6</option>
+                                    <option>H7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label class="col-xs-4">Tempo da questao</label>
+                            <div class="col-xs-2 border-bottom">
+                                <select class="form-select shadow-none border-0 form-control-line ps-0">
+                                    <option selected> 5 s</option>
+                                    <option>10 s</option>
+                                    <option>20 s</option>
+                                    <option>30 s</option>
+                                    <option>45 s</option>
+                                    <option>60 s</option>
+                                    <option>2 m</option>
+                                    <option>3 m</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="form-group">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="submit" class="btn btn-success">Salvar </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <br>
+                <h4>Lista de questões</h4>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">(PUC-Rio-2009) Em um colégio, de 100 alunos, 80 gostam de sorvete de chocolate, 70 gostam de sorvete de creme e 60 gostam dos dois sabores. Quantos alunos não gostam de nenhum dos dois sabores?</div>
+                            H1
+                        </div>
+                        <span class="badge bg-primary rounded-pill">3 m</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sabendo que A = {0, 1, 2, 3, 4, 5, 6}, B = {6, 7, 8, 9} e C = {2, 4, 6, 8, 10}, quais são os elementos do conjunto (A∩B)UC?</div>
+                            H1
+                        </div>
+                        <span class="badge bg-primary rounded-pill">2 m</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">(PUC) Numa pesquisa de mercado, verificou-se que 15 pessoas utilizam pelo menos um dos produtos A ou B. Sabendo que 10 dessas pessoas não usam o produto B e que 2 dessas pessoas não usam o produto A, qual é o número de pessoas
+                                que utilizam os produtos A e B?</div>
+                            H2
+                        </div>
+                        <span class="badge bg-primary rounded-pill">2 m</span>
+                    </li>
+                </ol>
+
+                <br>
+                <div class="form-group">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="submit" class="btn btn-success">AGENDAR</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer"> © 2021 <a href={% url 'sys_app:homepage' %}>Feito com s2 </a>
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+</div>
+{% endblock %}

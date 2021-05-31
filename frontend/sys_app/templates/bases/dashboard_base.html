@@ -39,7 +39,7 @@
         <header class="topbar" data-navbarbg="skin6">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin6">
-                    <h1 class="w-100 text-dark">MySite</h1>
+                    <img class="ml-lg-5" src="https://media.discordapp.net/attachments/847599630500888616/848659940053745674/anaLogo.png?width=1023&height=341" width="25%">
                     <a class="nav-toggler waves-effect waves-light text-white d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
                 </div>
                 <!-- ============================================================== -->
@@ -92,22 +92,24 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <!-- User Profile-->
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi me-2 mdi-gauge"></i><span
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'sys_app:dashboard' %} aria-expanded="false"><i class="mdi me-2 mdi-gauge"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-profile.html" aria-expanded="false">
-                                <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Profile</span></a>
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'sys_app:perfil' %} aria-expanded="false">
+                                <i class="mdi me-2 mdi-account-check"></i><span class="hide-menu">Perfil</span></a>
                         </li>
 
                         {% if group == 'professor' %}
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'sys_app:conteudo' %} aria-expanded="false"><i class="mdi me-2 mdi-help-circle"></i><span
-                                    class="hide-menu">Criar Conteúdo</span></a>
-                        </li>
-                        {% endif %}
+                            class="hide-menu">Criar Conteúdo</span></a> {% endif %} {% if group == 'aluno' %}
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'sys_app:materia' %} aria-expanded="false"><i class="mdi me-2 mdi-help-circle"></i><span
+                            class="hide-menu">Matéria</span></a>
+                            </li>
+                            {% endif %}
 
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'authapp:logout' %} aria-expanded="false"><i class="mdi me-2 mdi-close"></i><span
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'authapp:logout' %} aria-expanded="false"><i class="mdi me-2 mdi-close"></i><span
                             class="hide-menu">Sair</span></a>
-                        </li>
+                            </li>
                     </ul>
 
                 </nav>

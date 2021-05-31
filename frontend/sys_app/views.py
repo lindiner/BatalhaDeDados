@@ -25,6 +25,15 @@ def dashboard(request):
     return HttpResponseRedirect(reverse('authapp:login'))
 
 def conteudo(request):
+    group = [str(x) for x in request.user.groups.all()]
+    cardM = [
+        {
+            "name": "Matematica",
+            "desc": "e suas tecnologias",
+            "Andamento": "1"
+        }
+
+    ]
     cards = [
         {
             "name": "Questionário 1",
@@ -60,4 +69,75 @@ def conteudo(request):
             "ap": "96"
         }
     ]
-    return render(request, "dashboard_conteudo.html", {"cards": cards,"cardsRec":cardsRec})
+    return render(request, "dashboard_conteudo.html", {"cardM": cardM,"cards": cards,"cardsRec":cardsRec, 'textButton':"entrar","group": group[0],"user": request.user})
+
+def materia(request):
+    group = [str(x) for x in request.user.groups.all()]
+    cards = [
+        {
+            "name": "Matematica",
+            "desc": "e suas tecnologias",
+            "ap": "80"
+        },
+        {
+            "name": "Portugues",
+            "desc": "e suas tecnologias",
+            "ap": "60"
+        },
+       
+    ]
+    cardsENEM = [
+        {
+            "name": "Ciências da Natureza e suas Tecnologias",
+            "desc": "Biologia, Fisica, Quimica",
+            "ap": "50"
+        },
+        {
+            "name": "Ciências Humanas e suas Tecnologias",
+            "desc": "Historia, Geografia, Sociologia e Filosofia",
+            "ap": "55"
+        },
+        {
+            "name": "Matemática e suas Tecnologias",
+            "desc": "Matematica",
+            "ap": "65"
+        },
+        {
+            "name": "Linguagens, suas Tecnologias e Redação",
+            "desc": "Matematica",
+            "ap": "76"
+        }
+    ]
+    cardsRec = [
+        {
+            "name": "Algrebra linear",
+            "desc": "Álgebra linear é um ramo da matemática que surgiu do estudo detalhado de sistemas de equações lineares, sejam elas algébricas ou diferenciais",
+            "ap": "50"
+        },
+        {
+            "name": "Numeros reais",
+            "desc": "Chamamos de Números Reais o conjunto de elementos, representado pela letra maiúscula R, que inclui os",
+            "ap": "55"
+        },
+        {
+            "name": "Conjuntos",
+            "desc": "Na matemática, um conjunto é uma coleção de elementos.",
+            "ap": "65"
+        }
+    ]
+
+
+
+    return render(request, "materiaAluno.html",  {"cards": cards,"cardsENEM":cardsENEM , "cardsRec":cardsRec, 'textButton':"Entrar","group": group[0],"user": request.user} )
+
+def atividade(request):
+    group = [str(x) for x in request.user.groups.all()]
+    return render(request, "cadastrarQuestionario.html",{"group": group[0],"user": request.user})
+
+def cadastrasMateria(request):
+    group = [str(x) for x in request.user.groups.all()]
+    return render(request, "materiaProfessor.html",{"group": group[0],"user": request.user})
+
+def perfil(request):
+    group = [str(x) for x in request.user.groups.all()]
+    return render(request, "profile.html",{"group": group[0],"user": request.user})

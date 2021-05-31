@@ -4,9 +4,11 @@
     <!-- Navbar -->
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light py-2">
         <div class="container">
-            <a class="navbar-brand mr-lg-5" href="../index.html">
+            <a class="navbar-brand mr-lg-5" href={% url 'sys_app:homepage' %}>
                 <!-- <img src={% static "assets/img/brand/white.png" %}> -->
-                <h3 class="font-weight-bold title">NOMESITE</h3>
+                <div class="col-lg-6 col-10 mx-md-auto">
+                    <!-- <img class="ml-lg-5" src="https://media.discordapp.net/attachments/847599630500888616/848659940053745674/anaLogo.png?width=1023&height=341" width="25%"> -->
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -15,9 +17,7 @@
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a href="#">
-                                <h3 class="font-weight-bold title">NOMESITE</h3>
-                            </a>
+
                         </div>
                         <div class="col-6 collapse-close">
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,8 +58,10 @@
                     <div class="col px-0">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-6 text-center">
-                                <h1 class="text-white display-1">NOMESITE</h1>
-                                <h2 class="display-4 font-weight-normal text-white">Seu aprendizado aprimorado é nosso objetivo realizado!</h2>
+                                <div class="col-lg-4 col-2">
+                                    <img class="ml-lg-5" src="https://media.discordapp.net/attachments/847599630500888616/848659940053745674/anaLogo.png?width=1023&height=341" width="300%">
+                                </div>
+                                <h1 class="display-4 font-weight-bolder text-white">Seu aprendizado aprimorado é nosso objetivo realizado!</h1>
                                 <div class="btn-wrapper mt-4">
                                     <a href={% url 'authapp:login' %} class="btn btn-warning btn-icon mt-3 mb-sm-0">
                                         <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
@@ -77,6 +79,7 @@
         </svg>
             </div>
         </div>
+
         <div class="section features-6">
             <div class="container">
                 <div class="row align-items-center">
@@ -169,14 +172,11 @@
                 <div class="row align-items-center justify-content-md-between">
                     <div class="col-md-6">
                         <div class="copyright">
-                            &copy; 2021 <a href="" target="_blank">4dimensions</a>.
+                            &copy; 2021 <a href="" target="_blank">Feito com s2</a>.
                         </div>
                     </div>
                     <div class="col-md-6">
                         <ul class="nav nav-footer justify-content-end">
-                            <li class="nav-item">
-                                <a href="" class="nav-link" target="_blank">4dimensions</a>
-                            </li>
                             <li class="nav-item">
                                 <a href="" class="nav-link" target="_blank">Sobre nós</a>
                             </li>
