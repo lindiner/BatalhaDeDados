@@ -4,6 +4,9 @@
 
 [Demo: front-end](https://youtu.be/EQ2qZm6TrNA)
 
+[![Demo: front-end](http://img.youtube.com/vi/EQ2qZm6TrNA/0.jpg)](https://youtu.be/EQ2qZm6TrNA "Demo: front-end")
+
+
 
 ## Demo: modelagem dos dados para previsão de proficiência e gráficos de desempenho para dashboards
 
