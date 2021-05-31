@@ -5,6 +5,8 @@
 
 :tv: [Demo 60 segundos](https://youtu.be/qccktAWBroM)
 
+* o vídeo do demo está com 59 segundos, mas a ferramenta que usamos não é gratuita e adiciona um ending com a sua marca ao final de qualquer vídeo renderizado.
+
 [![Demo 60 segundos](http://img.youtube.com/vi/qccktAWBroM/0.jpg)](https://youtu.be/qccktAWBroM "Demo 60 segundos")
 
 ## Demo: interface de usuário e código front-end
